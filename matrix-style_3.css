@@ -1,0 +1,109 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Base styles */
+body {
+    font-family: 'Share Tech Mono', monospace;
+    background-color: #000000;
+    color: #00ff00;
+    min-height: 100vh;
+    display: flex; /* Center content horizontally and vertically */
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+/* Container for centering content */
+.container {
+    width: 100%;
+    height: 100%; /* Changed from min-height to height for full coverage */
+    position: relative;
+    display: flex; /* Center the content inside */
+    justify-content: center;
+    align-items: center;
+}
+
+/* Matrix rain canvas styling */
+#matrix_rain {
+    position: fixed; /* Ensures the canvas covers the entire viewport */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+/* Main content section */
+.content {
+    text-align: center;
+    z-index: 2; /* Ensure it sits above the canvas */
+    padding: 2rem;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    backdrop-filter: blur(5px); /* Creates a frosted glass effect */
+}
+
+/* Typography */
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    text-shadow: 0 0 10px #00ff00;
+}
+
+.intro_text {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    opacity: 0.8;
+}
+
+/* Pill container styling */
+.pill_container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+/* Common pill styles */
+.pill {
+    text-decoration: none;
+    padding: 0.8rem 2rem;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Red pill specific styles */
+.red_pill {
+    background: linear-gradient(45deg, #ff0000, #990000);
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.5);
+}
+
+.red_pill:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px rgba(255, 0, 0, 0.8);
+}
+
+/* Blue pill specific styles */
+.blue_pill {
+    background: linear-gradient(45deg, #0000ff, #000099);
+    box-shadow: 0 0 15px rgba(0, 0, 255, 0.5);
+}
+
+.blue_pill:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px rgba(0, 0, 255, 0.8);
+}
+
+/* Pill text styling */
+.pill_text {
+    color: white;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
