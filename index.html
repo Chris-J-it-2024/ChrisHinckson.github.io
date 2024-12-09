@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enter The Matrix</title>
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="matrix-style_3.css">
+    <!-- Google Fonts for Matrix-style typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Main container for centering content -->
+    <div class="container">
+        <!-- Matrix rain canvas will be rendered here -->
+        <canvas id="matrix_rain"></canvas>
+        
+        <!-- Main content section -->
+        <main class="content">
+            <h1>Welcome to the Digital Frontier</h1>
+            <p class="intro_text">Choose your path...</p>
+            
+            <!-- Navigation pills -->
+            <div class="pill_container">
+                <!-- Red pill leads to projects -->
+                <a href="projects_3.html" class="pill red_pill">
+                    <span class="pill_text">ENTER</span>
+                </a>
+                <!-- Blue pill exits -->
+                <a href="javascript:window.close();" class="pill blue_pill">
+                    <span class="pill_text">EXIT</span>
+                </a>
+            </div>
+        </main>
+    </div>
+
+    <!-- Matrix rain animation script -->
+    <script src="matrix-rain_3.js"></script>
+</body>
+</html>
